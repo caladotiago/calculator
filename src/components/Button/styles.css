@@ -1,0 +1,36 @@
+:root {
+    --bg-button: #8e2de2;
+    --bg-button-operation: #4a00e0;
+    /* --bg-button-hover: transparent; */
+}
+
+.button {
+    font-size: 1.4em;
+    background: var(--bg-button);
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button.operation:hover {
+    transition: background-color 1s ease;
+    background-color: var(--bg-button-hover);
+}
+
+.button:active {
+    transition: filter 0.5s ease;
+    opacity: 0.5;
+}
+
+.button.double {
+    grid-column: span 2;
+}
+
+.button.triple {
+    grid-column: span 3;
+}
+
+.button.operation {
+    background-color: var(--bg-button-operation);
+}
